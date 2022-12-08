@@ -1,41 +1,48 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Carrito de compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <title>SushiBox|Home</title>
 </head>
 <body>
-    <!-- nav bar -->
-    <header>
-       <div class="nav-container">
+    <!--navBar-->
+    <div class="nav-container">
         <nav class="navbar">
-            <h2 class="logoNavBar">Shop</h2>
-            <h2 class="visor-carro" id="verCarrito">🛒</h2>
+            <h1 class="navbar-logo">SushiBox</h1>
+            <h1 class="ver-carrito" id="verCarrito">🛒 <span id="cantidadCarrito" class="cantidad-carrito"></span></h1>  
         </nav>
-       </div>
-    </header>
-
-    <!-- banner -->
+    </div>
+    <!--banner-->
     <div class="banner">
         <div class="banner-container">
-            <h1>Sushi Box Online</h1>
-            <h2>Best Sushi in Town</h2>
+            <h1>SushiBox</h1>
+            <p>Best Sushi in Town</p>
         </div>
     </div>
-
-    <!-- sushi box content -->
+    <!--SushiBox content-->
     <div id="shopContent" class="shop-content"></div>
-
-
-    <!-- modal container -->
-
+    
+    <!--modal container-->
     <div id="modal-container" class="modal-container"></div>
 
 
-    <script src="./js/scripts.js"></script>
+    <footer>
+        <div class="ubicacion">
+            <h2>We are in Mendoza, Argentina.</h2>
+        </div>
+    
+        <div class="iconos_redes">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+    </footer>
+    
     <script src="./js/carrito.js"></script>
-    <script src="./js/product.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
